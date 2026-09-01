@@ -1,0 +1,39 @@
+{
+  "started": "2026-06-26 22:59:50",
+  "global_seed": 42,
+  "perturbation_seeds": [
+    1,
+    2,
+    3
+  ],
+  "n_samples_per_task": 500,
+  "gpus_used": "0",
+  "inference_backend": "vllm",
+  "models": [
+    {
+      "name": "Qwen2.5-32B-Base",
+      "hf_repo": "Qwen/Qwen2.5-32B",
+      "tier": "large",
+      "family": "Qwen2.5",
+      "type": "base",
+      "pair_id": "qwen25_32b",
+      "use_chat_template": false,
+      "quantize_4bit": false
+    },
+    {
+      "name": "Qwen2.5-32B-Instruct",
+      "hf_repo": "Qwen/Qwen2.5-32B-Instruct",
+      "tier": "large",
+      "family": "Qwen2.5",
+      "type": "instruct",
+      "pair_id": "qwen25_32b",
+      "use_chat_template": true,
+      "quantize_4bit": false
+    }
+  ],
+  "tasks": [
+    "gsm8k",
+    "mmlu_stem"
+  ],
+  "finished": "2026-06-27 00:12:33"
+}

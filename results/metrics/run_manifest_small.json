@@ -1,0 +1,79 @@
+{
+  "started": "2026-06-26 21:03:15",
+  "global_seed": 42,
+  "perturbation_seeds": [
+    1,
+    2,
+    3
+  ],
+  "n_samples_per_task": 500,
+  "gpus_used": "0",
+  "inference_backend": "vllm",
+  "models": [
+    {
+      "name": "Qwen3-8B-Base",
+      "hf_repo": "Qwen/Qwen3-8B-Base",
+      "tier": "small",
+      "family": "Qwen3",
+      "type": "base",
+      "pair_id": "qwen3_8b",
+      "use_chat_template": false,
+      "quantize_4bit": false
+    },
+    {
+      "name": "Qwen3-8B-Instruct",
+      "hf_repo": "Qwen/Qwen3-8B",
+      "tier": "small",
+      "family": "Qwen3",
+      "type": "instruct",
+      "pair_id": "qwen3_8b",
+      "use_chat_template": true,
+      "quantize_4bit": false
+    },
+    {
+      "name": "Gemma-7B-Base",
+      "hf_repo": "google/gemma-7b",
+      "tier": "small",
+      "family": "Gemma",
+      "type": "base",
+      "pair_id": "gemma_7b",
+      "use_chat_template": false,
+      "quantize_4bit": false
+    },
+    {
+      "name": "Gemma-7B-Instruct",
+      "hf_repo": "google/gemma-7b-it",
+      "tier": "small",
+      "family": "Gemma",
+      "type": "instruct",
+      "pair_id": "gemma_7b",
+      "use_chat_template": true,
+      "quantize_4bit": false
+    },
+    {
+      "name": "Llama-3.1-8B-Base",
+      "hf_repo": "meta-llama/Llama-3.1-8B",
+      "tier": "small",
+      "family": "Llama-3.1",
+      "type": "base",
+      "pair_id": "llama31_8b",
+      "use_chat_template": false,
+      "quantize_4bit": false
+    },
+    {
+      "name": "Llama-3.1-8B-Instruct",
+      "hf_repo": "meta-llama/Llama-3.1-8B-Instruct",
+      "tier": "small",
+      "family": "Llama-3.1",
+      "type": "instruct",
+      "pair_id": "llama31_8b",
+      "use_chat_template": true,
+      "quantize_4bit": false
+    }
+  ],
+  "tasks": [
+    "gsm8k",
+    "mmlu_stem"
+  ],
+  "finished": "2026-06-26 21:50:59"
+}

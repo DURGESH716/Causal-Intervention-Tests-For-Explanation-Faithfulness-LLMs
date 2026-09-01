@@ -1,0 +1,41 @@
+{
+  "started": "2026-06-27 00:20:38",
+  "global_seed": 42,
+  "perturbation_seeds": [
+    1,
+    2,
+    3
+  ],
+  "n_samples_per_task": 500,
+  "gpus_used": "0",
+  "inference_backend": "vllm",
+  "models": [
+    {
+      "name": "Llama-3.1-70B-Base",
+      "hf_repo": "meta-llama/Llama-3.1-70B",
+      "tier": "large",
+      "family": "Llama-3.1",
+      "type": "base",
+      "pair_id": "llama31_70b",
+      "use_chat_template": false,
+      "quantize_4bit": true,
+      "quant_method": "bitsandbytes"
+    },
+    {
+      "name": "Llama-3.1-70B-Instruct",
+      "hf_repo": "meta-llama/Llama-3.1-70B-Instruct",
+      "tier": "large",
+      "family": "Llama-3.1",
+      "type": "instruct",
+      "pair_id": "llama31_70b",
+      "use_chat_template": true,
+      "quantize_4bit": true,
+      "quant_method": "bitsandbytes"
+    }
+  ],
+  "tasks": [
+    "gsm8k",
+    "mmlu_stem"
+  ],
+  "finished": "2026-06-27 01:55:23"
+}

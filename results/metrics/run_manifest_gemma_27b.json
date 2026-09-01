@@ -1,0 +1,39 @@
+{
+  "started": "2026-06-26 21:57:58",
+  "global_seed": 42,
+  "perturbation_seeds": [
+    1,
+    2,
+    3
+  ],
+  "n_samples_per_task": 500,
+  "gpus_used": "0",
+  "inference_backend": "vllm",
+  "models": [
+    {
+      "name": "Gemma-2-27B-Base",
+      "hf_repo": "google/gemma-2-27b",
+      "tier": "large",
+      "family": "Gemma-2",
+      "type": "base",
+      "pair_id": "gemma2_27b",
+      "use_chat_template": false,
+      "quantize_4bit": false
+    },
+    {
+      "name": "Gemma-2-27B-Instruct",
+      "hf_repo": "google/gemma-2-27b-it",
+      "tier": "large",
+      "family": "Gemma-2",
+      "type": "instruct",
+      "pair_id": "gemma2_27b",
+      "use_chat_template": true,
+      "quantize_4bit": false
+    }
+  ],
+  "tasks": [
+    "gsm8k",
+    "mmlu_stem"
+  ],
+  "finished": "2026-06-26 22:56:56"
+}
